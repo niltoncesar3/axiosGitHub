@@ -20,7 +20,6 @@ const Home = () => {
       setPosts(data)
     }
     
-    
     catch (error) {
       console.log(error)
     }
@@ -29,6 +28,8 @@ const Home = () => {
   useEffect(() => {
     getPosts()
   },[])
+
+  
   return (
     <div className='home'>
       <h1>Últimos posts</h1>
